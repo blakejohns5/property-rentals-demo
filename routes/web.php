@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('places', [
+        'heading' => 'New Additions',
+        'places' => Place::all()
+    ]);
+});
+
+
+
+Route::get('/places/{id}', function($id) {
+    return view('place', [
+        'place' => Place::find($id)
+    ]);
 });
