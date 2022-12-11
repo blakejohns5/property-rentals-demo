@@ -22,8 +22,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-
-		Place::create([			
+		Place::create([
 			'title' => 'Costa de Sol Beach 1',
 			'description' => 'A bright, amazing apartment in a hidden corner of a small beach town on Costa de  Sol. A fantastic place for a family getaway or for much-needed relaxation.',
 			'tags' => 'beach, sunny, renovated',
